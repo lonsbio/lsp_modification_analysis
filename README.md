@@ -6,4 +6,4 @@ Contents of `secretomep-1.0` and `sub_programs` are incomplete. Due to the licen
 
 ## Modifictions
 
-Functions to modify sequences based on SignalP output are included in `protein_variation_functions.py`. A command line wrapper to process sequence files with these functions is in `modify_sequence.py`.
+Functions to modify sequences based on SignalP output are included in `protein_variation_functions.py`. A command line wrapper to process sequence files with these functions is in `modify_sequence.py`. Requires `signalp` to be installed.
