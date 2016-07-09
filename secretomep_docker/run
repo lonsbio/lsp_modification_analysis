@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Based on the nuceleotid.es API 
+# http://nucleotid.es/
+
+
+set -o errexit
+set -o xtrace
+set -o nounset
+INPUT="/input"
+OUTPUT="/output"
+
+# Source seqeunces 
+PROTEINS=${INPUT}/$1
+RESULTS=${OUTPUT}/${1}.results.tsv
+LOG=${OUTPUT}/${1}.log.txt
+
+/secretomep-1.0/secretomep -v -s $PROTEINS 1> $RESULTS 2> $LOG
+
+
